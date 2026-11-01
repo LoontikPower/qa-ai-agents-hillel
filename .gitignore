@@ -1,0 +1,37 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+.playwright/
+.playwright-cli/
+.playwright-mcp/
+*.pem
+*.key
+*.p12
+*.pfx
+auth.json
+storageState*.json
+.netrc
+.git-credentials
+
+# Dependencies
+node_modules/
+
+# Test output
+playwright-report/
+playwright-report-lab/
+test-results/
+blob-report/
+*.trace.zip
+
+# Agent and editor tooling
+.claude/
+.codex/
+.mcp.json
+.vscode/
+.idea/
+
+# OS and logs
+.DS_Store
+Thumbs.db
+*.log
