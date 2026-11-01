@@ -27,5 +27,9 @@ test.describe('Guest adds a car to Garage', () => {
 
     await expect(page).toHaveURL(/\/panel\/garage/);
     await expect(page.getByText('Audi TT')).toBeVisible();
+
+    // Mileage on the car card has no accessible name, so it is scoped to the Audi TT card
+    const car = page.getByRole('listitem').filter({ hasText: 'Audi TT' });
+    await expect(car.getByRole('spinbutton')).toHaveValue('12000');
   });
 });

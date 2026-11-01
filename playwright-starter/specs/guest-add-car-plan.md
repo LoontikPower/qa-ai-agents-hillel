@@ -34,4 +34,4 @@ Test plan for QAuto (baseURL from playwright.config.ts, https://qauto.forstudy.s
     - expect: Dialog closes
     - expect: Page URL still contains /panel/garage (assert with expect(page).toHaveURL(/\/panel\/garage/))
     - expect: Text 'Audi TT' is visible in the Garage list (list item contains paragraph 'Audi TT', e.g. getByText('Audi TT')); the empty-state text is gone
-    - expect: Car card shows mileage input value 12000 and 'Update mileage • <today dd.mm.yyyy>' (informational only, not the main assertion)
+    - expect: Car card shows mileage input value 12000 and 'Update mileage • <today dd.mm.yyyy>' (the mileage value is asserted in the test; the date is informational only)
