@@ -5,6 +5,7 @@
 | Що | Де |
 |---|---|
 | Автотест | [`playwright-starter/tests/guest-add-car.spec.ts`](playwright-starter/tests/guest-add-car.spec.ts) |
+| Page Object | [`playwright-starter/pages/garage.page.ts`](playwright-starter/pages/garage.page.ts) |
 | Run evidence | [`playwright-starter/evidence/run-evidence.md`](playwright-starter/evidence/run-evidence.md) |
 | Тест-кейс TC-001 | [`playwright-starter/docs/03-test-case.md`](playwright-starter/docs/03-test-case.md) |
 | Нормалізовані вимоги | [`playwright-starter/docs/01-normalized-requirements.md`](playwright-starter/docs/01-normalized-requirements.md) |
@@ -12,6 +13,16 @@
 | План від planner | [`playwright-starter/specs/guest-add-car-plan.md`](playwright-starter/specs/guest-add-car-plan.md) |
 
 **Як створено:** нормалізація вимог → аналіз → `playwright-test-planner` → `playwright-test-generator` → запуск.
+
+## Архітектура тестів
+
+Тести побудовані за патерном Page Object:
+
+- `pages/` — класи сторінок: локатори й дії користувача;
+- `tests/` — сценарії: тестові дані й усі перевірки `expect`.
+
+Клас сторінки знає, як виконати дію, а тест знає, що має бути правильним. Намір лабораторної роботи
+зберігається: `labs/broken-guest-garage.spec.ts` навмисно зламаний і не використовує Page Object.
 
 ## Як запустити тести самостійно
 

@@ -7,6 +7,7 @@
 | Тип | Функціональний, позитивний, E2E UI |
 | Пріоритет | Високий |
 | Автоматизація | `tests/guest-add-car.spec.ts` |
+| Page Object | `pages/garage.page.ts` |
 | Вимоги | R1–R9, R11, R37, R45, R49, R51 (`docs/01-normalized-requirements.md`) |
 | План | `specs/guest-add-car-plan.md` |
 | Браузер | Chromium, Playwright 1.62.1 |
