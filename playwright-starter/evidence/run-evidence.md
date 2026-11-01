@@ -84,4 +84,4 @@ Running 6 tests using 6 workers
   - Людина доручила перебудувати все на Page Object, тому змінено й baseline `tests/guest-garage.spec.ts`. Окремого `APPROVE REFACTOR` не було. Lab-тест навмисно не змінено.
   - ДЗ називає Codex, а локатори перевірено агентами Playwright у Claude Code. Людина обрала цей процес.
   - `AGENTS.md` забороняє агенту push, а людина прямо доручила push.
-- DECISION: `ACCEPT` / `STOP` — очікує рішення людини
+- DECISION: `ACCEPT` — тест і фактичний запуск переглянуто людиною
